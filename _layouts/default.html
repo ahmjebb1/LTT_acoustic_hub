@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <title>{{ page.title | default: "LTT Acoustic Hub" }}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<header class="site-header">
-   <div class="header-container">
-
-       <a class="site-title" href="{{ '/' | relative_url }}">
-        LTT Acoustic Hub
-       </a>
-  
 <body>
-  <header>
-    <nav>
+
+  <header class="site-header">
+    <div class="header-container">
+
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        LTT Acoustic Hub
+      </a>
+
+      <nav class="main-nav">
       # specify pages here.
       <a href="/">Home</a> |
       <a href="/people.html">People</a> |
@@ -26,16 +27,25 @@
       <a href="/code.html">Code Files</a> |
       <a href="/datasets.html">Data Sets</a> |
       <a href="/contact.html">Contact Details</a>
-      
-    </nav>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="page-content">
     {{ content }}
   </main>
 
-  <footer>
-    <p>© Academic Research Portfolio</p>
+  <footer class="site-footer">
+    <p>
+      LTT Acoustic Hub | University of Sheffield
+    </p>
+    <p>
+      Research into the bioacoustics and behaviour
+      of long-tailed tits.
+    </p>
   </footer>
+
 </body>
 </html>
+
